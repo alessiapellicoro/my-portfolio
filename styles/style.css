@@ -3,3 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+.body{
+    background-color: #F7F7FA;
+}
+
+.card{
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.card-image-container{
+    height: 394px;
+}
+.card-title-container{
+    height: 102px;
+}
+.card-about-container{
+    height: 273px;
+}
+.card-skills-container{
+    height: 172px;
+}
+.card-study-container{
+    height: 375px;
+}
+.card-project-container{
+    height: 377px;
+}
