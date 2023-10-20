@@ -7,27 +7,27 @@
     background-color: #F7F7FA;
 }
 
-.card{
+.cardboard{
     border: 1px solid black;
     background-color: #fff;
     border-radius: 20px;
 }
 
-.card-image-container{
+.cardboard-image{
     height: 394px;
 }
-.card-title-container{
+.cardboard-title{
     height: 102px;
 }
-.card-about-container{
+.cardboard-about{
     height: 273px;
 }
-.card-skills-container{
+.cardboard-skills{
     height: 172px;
 }
-.card-study-container{
+.cardboard-study{
     height: 375px;
 }
-.card-project-container{
+.cardboard-project{
     height: 377px;
 }
