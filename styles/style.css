@@ -10,13 +10,14 @@
 .app-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 0 auto;
     gap: 30px;
 }
 
 .hero{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;;
     gap: 30px;
 }
 
@@ -80,11 +81,21 @@
     max-width: 341px;
     height: 277px;
 }
+.cardboard-form{
+    width: 341px;
+    height: 683px;
+}
+.cardboard-footer{
+    width: 341px;
+    height: 66px;
+}
 .cardboard-contacts{
     display: none;
 }
 .cardboard-contacts-mobile{
-
+    width: 375px;
+    height: 80px;
+    margin: 0 auto;
 }
 /* end Phone Size */
 
@@ -137,6 +148,14 @@
         min-width: 712px;
         height: 496px;
     }
+    .cardboard-form{
+        width: 712px;
+        height: 682px;
+    }
+    .cardboard-footer{
+        width: 712px;
+        height: 66px;
+    }
 }
 
 /* Device Content Desktop */
@@ -181,6 +200,14 @@
     .cardboard-project{
         min-width: 785px;
         height: 577px;
+    }
+    .cardboard-form{
+        width: 1196px;
+        height: 417px;
+    }
+    .cardboard-footer{
+        width: 1196px;
+        height: 66px;
     }
     .cardboard-contacts{
         display: block;
