@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-.body{
-
-}
 
 .centered{
     height: 100%;
@@ -176,6 +173,54 @@
 }
 /* End Image container */
 
+/* Content Project */
+.content-cardboard-project{
+    margin: 24px;
+}
+.content-cardboard-project-header{
+    display: flex;
+    margin-bottom: 32px;
+    justify-content: space-between;
+}
+.content-cardboard-project img{
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 20px;
+}
+.cover-image-link{
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: 172px;
+}
+.cover-image{
+    width: 100%;
+    height: 100%;
+}
+.cover-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+/* End Content Project */
+
+/* Content Form */
+.content-cardboard-form input, 
+.content-cardboard-form textarea{
+    border: none;
+    margin-top: 16px;
+    display: flex;
+    background-color: #F7F7FA;
+    gap: 10px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+}
+/* End Content Form */
+
 /* Content Contacts */
 .content-cardboard-contacts img{
     width: 35px;
@@ -270,6 +315,14 @@
         width: 712px;
         /* ? height: 66px; */
     }
+    /* Content Project */
+    .cover-image-link{
+        display: block;
+        justify-content: center;
+        width: 100%;
+        height: 381px;
+    }
+    /* End Content Project */
 }
 
 /* Device Content Desktop */
@@ -326,7 +379,7 @@
     }
     .cardboard-project{
         min-width: 785px;
-        height: 577px;
+        height: 593px;
     }
     .cardboard-form{
         width: 1196px;
@@ -344,4 +397,12 @@
     .cardboard-contacts-mobile{
         display: none;
     }
+      /* Content Project */
+      .cover-image-link{
+        display: block;
+        justify-content: center;
+        width: 100%;
+        height: 483px;
+    }
+    /* End Content Project */
 }
