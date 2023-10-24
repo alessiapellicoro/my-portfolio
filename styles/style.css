@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .body{
+
 }
 
 .centered{
@@ -19,6 +20,8 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    padding: 48px;
+    padding-bottom: calc(80px + 24px);
     gap: 30px;
     background-color: #F7F7FA;
 }
@@ -39,33 +42,64 @@
 
 /* Typography */
 .heading-1{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 29px;
     color: #3F403F;
-    font-weight: bold;
+    font-weight: 700;
+    /* line-height: 22.5px; */
+    margin: 0;
+    padding: 0
 }
 .heading-2{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 19px;
     color: #3F403F;
     font-weight: 600;
+    line-height: 120%;
+    margin: 0;
+    padding: 0
+}
+.heading-3{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #3F403F;
+    font-weight: 700;
+    line-height: 22.5px;
+    margin: 0;
+    padding: 0
 }
 .text{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 12px;
     color: #3F403F;
     font-style: normal;
+    /* font-weight: 300; */
     line-height: 22.5px;
     text-align: justify;
     margin: 0;
     padding: 0
-    /* font-weight: lighter; */
+}
+.lable{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #3F403F;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22.5px;
+    margin: 0;
+    padding: 0
+}
+.link{
+    color: #3F403F;
+}
+.link:hover{
+    color: #c4c4c4;
 }
 /* End Typography */
 
 /* Cardboards Styles */
 .cardboard{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: #fff;
     border-radius: 20px;
 }
@@ -91,7 +125,7 @@
 }
 .cardboard-about{
     width: 100%;
-    height: 273px;
+    height: 251px;
     padding: 24px;
 }
 .skills-study{
@@ -109,7 +143,8 @@
 .cardboard-study{
     min-width: 341px;
     max-width: 341px;
-    height: 375px;
+    height: 347px;
+    padding: 24px;
 }
 .cardboard-project{
     min-width: 341px;
@@ -153,10 +188,36 @@
 }
 /* End Content Contacts */
 
-
+/* Content Footer */
+.content-cardboard-footer{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.text-footer-left,
+.text-footer-right{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.text-footer-left{
+    justify-content: start;
+    margin-left: 32px;
+}
+.text-footer-right{
+    justify-content: end;
+    gap: 16px;
+    margin-right: 32px;
+}
+/* End Content Footer */
 
 
 /* Device Content Tablet */
+/* 
+    If "?" it is just in case 
+    i have to change it in future
+*/
 @media (min-width: 720px) { 
     .hero{
         width: 100%;
@@ -164,14 +225,13 @@
         justify-content: center;
     }
    .cardboard-image{
-        min-width: 341px;
-        max-width: 341px;
-        height: 405px;
+        /* ? min-width: 341px; */
+        /* ?max-width: 341px; */
+        height: 383px;
         margin: 0;
     }
     .title-about{
-        /* min-width: 482px; */
-        max-width: 341px;
+        /* ? max-width: 341px; */
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -179,11 +239,11 @@
     }
     .cardboard-title{
         width: 100%;
-        height: 102px;
+        /* ? height: 102px; */
     }
     .cardboard-about{
         width: 100%;
-        height: 273px;
+        /* ? height: 251px; */
     }
     .skills-study{
         flex-direction: row-reverse;
@@ -192,11 +252,11 @@
     }
     .cardboard-skills{
         width: 100%;
-        height: 172px;
+        /* ? height: 172px; */
     }
     .cardboard-study{
         width: 100%;
-        height: 375px;
+        /* ? height: 347px; */
     }
     .cardboard-project{
         min-width: 712px;
@@ -208,7 +268,7 @@
     }
     .cardboard-footer{
         width: 712px;
-        height: 66px;
+        /* ? height: 66px; */
     }
 }
 
@@ -219,6 +279,12 @@
     .heading-1{
         font-size: 37px;
     }
+    .heading-2{
+        font-size: 23px;
+    }
+    .heading-3{
+        font-size: 19px;
+    }
     .text{
         font-size: 15px;
     }
@@ -227,7 +293,7 @@
    .cardboard-image{
         min-width: 277px;
         max-width: 277px;
-        height: 374px;
+        height: 352px;
         margin: 0;
     }
     .title-about{
@@ -236,11 +302,11 @@
     }
     .cardboard-title{
         width: 100%;
-        height: 116px;
+        height: 115px;
     }
     .cardboard-about{
         width: 100%;
-        height: 228px;
+        height: 206px;
     }
     .main{
         flex-direction: row-reverse;
