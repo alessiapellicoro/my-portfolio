@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -69,15 +71,21 @@
             <div class="skills-study">
                 <!-- Cardboard Skills -->
                 <div class="cardboard-skills cardboard">
-                    <div class="content-cardboard-skills centered">
-                        <h2 class="heading-2">Skills</h2>
-                        <!-- <img src="assets/figma-icon.png" alt="figma-icon">
-                        <img src="assets/illustrator-icon.png" alt="illustrator-icon">
-                        <img src="assets/photoshop-icon.png" alt="photoshop-icon">
-                        <img src="assets/indesign-icon.png" alt="indesign-icon">
-                        <img src="assets/after-effects-icon.png" alt="after-effects-icon">
-                        <img src="assets/css-icon.png" alt="css-icon">
-                        <img src="assets/html-icon.png" alt="html-icon"> -->
+                    <div class="content-cardboard-skills scrloll-1">
+                        <div>
+                            <h2 class="heading-2">Skills</h2>
+                        </div>
+
+                        <div class="content-cardboard-skills-icon">
+                            <img src="assets/figma-icon.png" alt="figma-icon">
+                            <img src="assets/illustrator-icon.png" alt="illustrator-icon">
+                            <img src="assets/photoshop-icon.png" alt="photoshop-icon">
+                            <img src="assets/indesign-icon.png" alt="indesign-icon">
+                            <img src="assets/after-effects-icon.png" alt="after-effects-icon">
+                            <img src="assets/css-icon.png" alt="css-icon">
+                            <img src="assets/html-icon.png" alt="html-icon">
+                        </div>
+
                     </div>
                 </div>
                 <!-- Cardboard Study -->
@@ -88,7 +96,7 @@
                         <h3 class="heading-3">Start2Impact University</h3>
                         <p class="text"><b>Master in UX & UI</b> 2022-2023</p>
                         <p class="text">Skills:</p>
-                        <p class="text">Grafica, Copywriting, Discovery, Wireframing, User Intrface, Design e Sviluppo ,Html e Css, User Test.</p>
+                        <p class="text">Grafica, Discovery, Wireframing, User Intrface, User Test, Design e Sviluppo, Html e Css, Copywriting.</p>
                         <br>
                         <h3 class="heading-3">Accademia di Belle Arti di Bari</h3>
                         <p class="text"><b>Laurea in Grafica d'Arte</b> 2018-2022</p>
@@ -104,8 +112,8 @@
                     <div class="content-cardboard-project-header">
                         <h2 class="heading-2">Project</h2>
                         <div>
-                            <img src="./assets/left-arrow.png" alt="left-arrow">
-                            <img src="./assets/right-arrow.png" alt="right-arrow">
+                            <i class="fas fa-chevron-left arrow fa-1x"></i>
+                            <i class="fas fa-chevron-right arrow fa-1x"></i>
                         </div>
                     </div>
                     <a class="cover-image-link" href="">
@@ -121,19 +129,35 @@
         <!-- Cardboard Contact Me -->
         <div class="cardboard-form cardboard">
             <div class="content-cardboard-form">
+                
                 <h2 class="heading-2">Contact me</h2>
 
-                <h3 class="heading-3">Nome e Cognome</h3>
-                <input type="text" placeholder="Nome e Cognome">
+                <div class="content-cardboard-form-typing">
 
-                <h3 class="heading-3">Indirizzo e-mail</h3>
-                <input type="text" placeholder="Indirizzo e-mail">
+                    <div class="typing-1">
+                        <h3 class="heading-3">Nome e Cognome</h3>
+                        <input type="text" placeholder="Nome e Cognome">
 
-                <h3 class="heading-3">Di cosa hai bisogno?</h3>
-                <input type="text" placeholder="Di cosa hai bisogno?">
+                        <h3 class="heading-3">Indirizzo e-mail</h3>
+                        <input type="text" placeholder="Indirizzo e-mail">
 
-                <h3 class="heading-3">Il tuo messaggio</h3>
-                <textarea placeholder="Il tuo messaggio"></textarea>
+                        <h3 class="heading-3">Di cosa hai bisogno?</h3>
+                        <input type="text" placeholder="Di cosa hai bisogno?">
+                    </div>
+
+                    <div class="typing-2">
+                        <h3 class="heading-3">Il tuo messaggio</h3>
+                        <div class="textarea">
+                            <textarea placeholder="Il tuo messaggio"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+                <div class="cta-send-message">
+                    <button class="button">Invia il messaggio</button>
+                </div>
             </div>
         </div>
 
