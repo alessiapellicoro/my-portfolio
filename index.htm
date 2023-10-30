@@ -14,6 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css Icon -->
+    <link href="https://css.gg/css" rel="stylesheet" />
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </head>
 
 <body>
@@ -51,14 +57,35 @@
             <!-- Cardboard Contacts -->
             <div class="cardboard-contacts cardboard">
                 <div class="content-cardboard-contacts centered">
-                    <img src="./assets/telephone-icon.png" alt="telephone-icon">
-                    <img src="./assets/email-icon.png" alt="email-icon">
-                    <img src="./assets/cv-icon.png" alt="cv-icon">
+                    <a class="button-contact">
+                        <div>
+                            <img src="./assets/phone-call.png" alt="telephone-icon">
+                        </div>
+                    </a>
+                    <a class="button-contact">
+                        <div>
+                            <img src="./assets/email.png" alt="email-icon">
+                        </div>
+                    </a>
+                    <a class="button-contact">
+                        <div>
+                            <img src="./assets/cv-crop.png" alt="cv-icon">
+                        </div>
+                    </a>
 
                     <hr class="line"> 
+                    
+                    <a class="button-contact">
+                        <div>
+                            <img src="./assets/linkedin-icon.png" alt="linkedin-icon">
+                        </div>
+                    </a>
+                    <a class="button-contact">
+                        <div>
+                            <img src="./assets/behance-icon.png" alt="behance-icon">
+                        </div>
+                    </a>
 
-                    <img src="./assets/linkedin-icon.png" alt="linkedin-icon">
-                    <img src="./assets/behance-icon.png" alt="behance-icon">
                 </div>
             </div>
 
@@ -112,8 +139,12 @@
                     <div class="content-cardboard-project-header">
                         <h2 class="heading-2">Project</h2>
                         <div>
-                            <i class="fas fa-chevron-left arrow fa-1x"></i>
-                            <i class="fas fa-chevron-right arrow fa-1x"></i>
+                            <button class="arrow">
+                                <ion-icon name="chevron-back-circle-outline" size="large"></ion-icon>    
+                            </button>
+                            <button class="arrow">
+                                <ion-icon name="chevron-forward-circle-outline" size="large"></ion-icon>
+                            </button>
                         </div>
                     </div>
                     <a class="cover-image-link" href="">
@@ -177,7 +208,37 @@
         <!-- Contacts  Mobile -->
         <div class="fixed-bottom">
             <div class="cardboard-contacts-mobile cardboard">
-                <div class="content-cardboard-contacts-mobile">contacts</div>
+                <div class="content-cardboard-contacts-mobile">
+                    <a class="button-contact">
+                        <div>
+                            <img src="./assets/phone-call.png" alt="telephone-icon">
+                        </div>
+                    </a>
+                    <a class="button-contact">
+                        <div>
+                            <img src="./assets/email.png" alt="email-icon">
+                        </div>
+                    </a>
+                    <a class="button-contact">
+                        <div>
+                            <img src="./assets/cv-crop.png" alt="cv-icon">
+                        </div>
+                    </a>
+                    
+                    <div class="line-vertical"></div>
+
+                    <a class="button-contact">
+                        <div>
+                            <img src="./assets/linkedin-icon.png" alt="linkedin-icon">
+                        </div>
+                    </a>
+                    <a class="button-contact">
+                        <div>
+                            <img src="./assets/behance-icon.png" alt="behance-icon">
+                        </div>
+                    </a>
+
+                </div>
             </div>
         </div>
         
