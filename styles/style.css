@@ -143,6 +143,7 @@
     background-color: #fff;
     border-radius: 20px;
 }
+/* End cradbord Style */
 
 /* Phone Size */
 /* 
@@ -194,7 +195,8 @@
 .cardboard-project{
     min-width: 341px;
     max-width: 341px;
-    height: 277px;
+    height: 100%;
+    padding: 24px;
 }
 .cardboard-form{
     width: 341px;
@@ -234,20 +236,10 @@
 /* End Content Skills */
 
 /* Content Project */
-.content-cardboard-project{
-    margin: 24px;
-}
 .content-cardboard-project-header{
     display: flex;
     margin-bottom: 32px;
     justify-content: space-between;
-}
-.content-cardboard-project img{
-    width: 24px;
-    height: 24px;
-    margin-left: 8px;
-    margin-right: 8px;
-    border-radius: 20px;
 }
 .cover-image-link{
     display: block;
@@ -264,6 +256,7 @@
     height: 100%;
     object-fit: cover;
     margin: 0;
+    border-radius: 20px;
 }
 .arrow{
     color: #3F403F;
@@ -502,11 +495,12 @@ ion-icon{
     }
     .cardboard-study{
         max-width: 100%;
+        max-width: 100%;
         height: 375px;
     }
     .cardboard-project{
         min-width: 785px;
-        height: 593px;
+        height: 577px;
     }
     .cardboard-form{
         width: 1196px;
@@ -525,12 +519,15 @@ ion-icon{
     .cardboard-contacts-mobile{
         display: none;
     }
-      /* Content Project */
-      .cover-image-link{
-        display: block;
+    /* Content Project */
+    .content-cardboard-project{
+        width: 100%;
+        /* height: 100%; */
+    }
+    .cover-image-link{
         justify-content: center;
         width: 100%;
-        height: 483px;
+        height: 100%;
     }
     /* End Content Project */
 

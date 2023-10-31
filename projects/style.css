@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app-container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 0 auto;
+    padding: 48px;
+    padding-bottom: calc(80px + 24px);
+    gap: 30px;
+    background-color: #F7F7FA;
+}
+/* Typography */
+.heading-1{
+    font-family: 'Inter', sans-serif;
+    font-size: 29px;
+    color: #3F403F;
+    font-weight: 700;
+    /* line-height: 22.5px; */
+    margin: 0;
+    padding: 0
+}
+.heading-2{
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    color: #3F403F;
+    font-weight: 600;
+    line-height: 120%;
+    margin: 0;
+    padding: 0
+}
+.heading-3{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #3F403F;
+    font-weight: 600;
+    line-height: 22.5px;
+    margin: 0;
+    padding: 0
+}
+.text{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #3F403F;
+    font-style: normal;
+    /* font-weight: 300; */
+    line-height: 22.5px;
+    text-align: justify;
+    margin: 0;
+    padding: 0
+}
+.lable{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #3F403F;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22.5px;
+    margin: 0;
+    padding: 0
+}
+/* End Typography */
+
+/* Button */
+.button{
+    appearance: none;
+    background-color: transparent;
+    border: 1.5px solid #3F403F;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: #3F403F;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 24px;
+    text-align: center;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+   }
+.button:disabled {
+    pointer-events: none;
+}
+.button:hover {
+    color: #fff;
+    background-color: #3F403F;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; */
+    transform: translateY(-2px);
+}
+.button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+.link{
+    color: #3F403F;
+}
+.link:hover{
+    color: #c4c4c4;
+}
+/* End Button */
+
+.title-page{
+    margin-bottom: 16px;
+}
+.subtitle-page{
+    margin-bottom: 8px;
+}
+
+.page-header{
+    display: flex;
+    justify-content: space-between;
+}
+.page-header img{
+    width: 24px;
+    height: 24px;
+}
+
+/* Cardboards*/
+.cardboard{
+    /* border: 1px solid black; */
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 341px;
+    height: 204px;
+    padding: 24px;
+    margin-top: 16px;
+    margin-bottom: 26px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+/* End Cardbord */
+
+/* Content Color Palette */
+.content-cardbord-color-palette{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.square{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+/* End Content Color Palette */
+
+.cardboard-footer{
+    width: 341px;
+    height: 66px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+/* Content Footer */
+.content-cardboard-footer{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.text-footer-left,
+.text-footer-right{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.text-footer-left{
+    justify-content: start;
+    margin-left: 32px;
+}
+.text-footer-right{
+    justify-content: end;
+    gap: 16px;
+    margin-right: 32px;
+}
+/* End Content Footer */
+
+/* Device Content Tablet */
+@media (min-width: 720px){
+    .cardboard-footer{
+        width: 712px;
+        /* ? height: 66px; */
+    }
+    
+    
+    .container-cardboard{
+        display: flex;
+        gap: 39px;
+        flex-wrap: wrap;
+    }
+
+}
+
+/* Device Content Desktop */
+@media (min-width: 1200px){
+     /* Typography */
+     .heading-1{
+        font-size: 37px;
+    }
+    .heading-2{
+        font-size: 23px;
+    }
+    .heading-3{
+        font-size: 19px;
+    }
+    .text{
+        font-size: 15px;
+    }
+    /* End Typography */
+    .page-header img{
+        width: 48px;
+        height: 48px;
+    }
+    .task, .solution{
+        width: 50%;
+    }
+    .cardboard{
+        background-color: #fff;
+        width: 586px;
+        height: 340px;
+    }
+    .content-cardbord-color-palette{
+        display: flex;
+        width: 411px;
+        height: 100%;
+    }
+    .square{
+        display: flex;
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        flex-wrap: wrap;
+    }
+    .cardboard-footer{
+        width: 1196px;
+        height: 66px;
+    }
+}
