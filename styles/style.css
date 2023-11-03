@@ -501,6 +501,7 @@ ion-icon{
     .cardboard-project{
         min-width: 785px;
         height: 577px;
+        /* height: 100%; */
     }
     .cardboard-form{
         width: 1196px;

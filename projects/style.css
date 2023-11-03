@@ -6,12 +6,16 @@
 .app-container{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+     /* width: 341px; */
+    align-items: center;
     margin: 0 auto;
     padding: 48px;
     padding-bottom: calc(80px + 24px);
     gap: 30px;
     background-color: #F7F7FA;
+}
+.hero{
+    width: 341px;
 }
 /* Typography */
 .heading-1{
@@ -80,6 +84,7 @@
     padding: 8px 24px;
     text-align: center;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    margin-bottom: 56px;
    }
 .button:disabled {
     pointer-events: none;
@@ -102,20 +107,40 @@
 }
 /* End Button */
 
+.back{
+    width: 341px;
+    display: flex;
+    justify-content: start;
+}
+.back img{
+    width: 130px;
+}
 .title-page{
     margin-bottom: 16px;
 }
 .subtitle-page{
     margin-bottom: 8px;
 }
-
 .page-header{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 32px;
 }
 .page-header img{
     width: 24px;
     height: 24px;
+}
+.task{
+    margin-bottom: 32px;
+}
+.solution{
+    margin-bottom: 16px;
+}
+.cardboard-footer{
+    width: 341px;
+    height: 66px;
+    background-color: #fff;
+    border-radius: 20px;
 }
 
 /* Cardboards*/
@@ -132,8 +157,14 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    padding: 24px;
 }
 /* End Cardbord */
+.cardboard img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 /* Content Color Palette */
 .content-cardbord-color-palette{
@@ -151,13 +182,6 @@
     flex-wrap: wrap;
 }
 /* End Content Color Palette */
-
-.cardboard-footer{
-    width: 341px;
-    height: 66px;
-    background-color: #fff;
-    border-radius: 20px;
-}
 
 /* Content Footer */
 .content-cardboard-footer{
@@ -185,22 +209,29 @@
 
 /* Device Content Tablet */
 @media (min-width: 720px){
+    .hero{
+        width: 721px;
+    }
+    .back{
+        width: 721px;
+    }
     .cardboard-footer{
-        width: 712px;
+        width: 721px;
         /* ? height: 66px; */
     }
-    
-    
     .container-cardboard{
         display: flex;
+        width: 721px;
         gap: 39px;
         flex-wrap: wrap;
     }
-
 }
 
 /* Device Content Desktop */
 @media (min-width: 1200px){
+    .hero{
+        width: 1196px;
+    }
      /* Typography */
      .heading-1{
         font-size: 37px;
@@ -215,7 +246,10 @@
         font-size: 15px;
     }
     /* End Typography */
-    .page-header img{
+    .back{
+        width: 1196px;
+    }
+    .tool img{
         width: 48px;
         height: 48px;
     }
@@ -224,8 +258,11 @@
     }
     .cardboard{
         background-color: #fff;
-        width: 586px;
+        width: 577px;
         height: 340px;
+    }
+    .container-cardboard{
+        width: 1196px;
     }
     .content-cardbord-color-palette{
         display: flex;
