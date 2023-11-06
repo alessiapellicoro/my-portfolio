@@ -19,7 +19,10 @@
     <!-- Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+    <!-- Mail Js -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
 </head>
 
 <body>
@@ -167,19 +170,19 @@
 
                     <div class="typing-1">
                         <h3 class="heading-3">Nome e Cognome</h3>
-                        <input type="text" placeholder="Nome e Cognome">
+                        <input type="text" id="fullName" placeholder="Nome e Cognome">
 
                         <h3 class="heading-3">Indirizzo e-mail</h3>
-                        <input type="text" placeholder="Indirizzo e-mail">
+                        <input type="text" id="email_id" placeholder="Indirizzo e-mail">
 
                         <h3 class="heading-3">Di cosa hai bisogno?</h3>
-                        <input type="text" placeholder="Di cosa hai bisogno?">
+                        <input type="text" id="object" placeholder="Di cosa hai bisogno?">
                     </div>
 
                     <div class="typing-2">
                         <h3 class="heading-3">Il tuo messaggio</h3>
                         <div class="textarea">
-                            <textarea placeholder="Il tuo messaggio"></textarea>
+                            <textarea id="message" placeholder="Il tuo messaggio"></textarea>
                         </div>
                     </div>
 
@@ -187,7 +190,7 @@
 
                 
                 <div class="cta-send-message">
-                    <button class="button">Invia il messaggio</button>
+                    <button id="submit-button" onclick="sendMail()" class="button">Invia il messaggio</button>
                 </div>
             </div>
         </div>
@@ -244,7 +247,8 @@
         
     </div>
     
-    <script type="module" src="./js/script.js"></script>
+    <script src="./env.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 
