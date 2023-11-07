@@ -528,11 +528,12 @@ ion-icon{
         justify-content: center;
     }
     .skills-study{
+        min-width: 381px;
         width: 381px;
         flex-direction: column;
     }
     .cardboard-skills{
-        max-width: 100%;
+        min-width: 100%;
         height: 172px;
     }
     .cardboard-study{

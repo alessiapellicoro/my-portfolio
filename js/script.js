@@ -71,3 +71,14 @@ function closePopup (){
     document.getElementById("object").value = ""
     document.getElementById("message").value = ""
 }
+
+/**
+ * gsap
+ */
+// const tl = new gsap.timeline()
+// tl.from(".cardboard-image", { y: 200, autoAlpha: 0, duration: 1 });
+// tl.from(".cardboard-title", { y: 200, autoAlpha: 0, duration: 1 }, '<0.25');
+// tl.from(".cardboard-about", { y: 200, autoAlpha: 0, duration: 1 }, '<0.25');
+// tl.from(".cardboard-contacts", { x: -200, autoAlpha: 0, duration: 1 }, '<0.25');
+// tl.from(".skills-study", { x: 200, autoAlpha: 0, duration: 1 }, '<0.25');
+// tl.from(".cardboard-project", { y: 200, autoAlpha: 0, duration: 1 }, '<0.25');
