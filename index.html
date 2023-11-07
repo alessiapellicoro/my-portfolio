@@ -173,7 +173,7 @@
                         <input type="text" id="fullName" placeholder="Nome e Cognome">
 
                         <h3 class="heading-3">Indirizzo e-mail</h3>
-                        <input type="text" id="email_id" placeholder="Indirizzo e-mail">
+                        <input type="email" id="email_id" placeholder="Indirizzo e-mail">
 
                         <h3 class="heading-3">Di cosa hai bisogno?</h3>
                         <input type="text" id="object" placeholder="Di cosa hai bisogno?">
@@ -190,7 +190,7 @@
 
                 
                 <div class="cta-send-message">
-                    <button id="submit-button" onclick="sendMail()" class="button">Invia il messaggio</button>
+                    <button id="submit-button" onclick="sendMail()" class="button" type="submit">Invia il messaggio</button>
                 </div>
             </div>
         </div>
@@ -212,17 +212,23 @@
         <div class="fixed-bottom">
             <div class="cardboard-contacts-mobile cardboard">
                 <div class="content-cardboard-contacts-mobile">
-                    <a class="button-contact" href="tel:+39 388 7943988">
+
+                    <!-- Phone Number -->
+                    <a class="button-contact" href="tel:+39 388 7943988" onclick="closePopup()">
                         <div>
                             <img src="./assets/phone-call.png" alt="telephone-icon">
                         </div>
                     </a>
-                    <a class="button-contact" href="mailto:pellicoroalessia@gmail.com">
+
+                    <!-- Mail -->
+                    <a class="button-contact" href="mailto:pellicoroalessia@gmail.com" onclick="closePopup()">
                         <div>
                             <img src="./assets/email.png" alt="email-icon">
                         </div>
                     </a>
-                    <a class="button-contact">
+
+                    <!-- Cv -->
+                    <a class="button-contact" onclick="closePopup()">
                         <div>
                             <img src="./assets/cv-crop.png" alt="cv-icon">
                         </div>
@@ -230,12 +236,15 @@
                     
                     <div class="line-vertical"></div>
 
-                    <a class="button-contact" href="https://www.linkedin.com/in/alessiapellicoro/" target="_blank">
+                    <!-- LInkedin -->
+                    <a class="button-contact" href="https://www.linkedin.com/in/alessiapellicoro/" target="_blank" onclick="closePopup()">
                         <div>
                             <img src="./assets/linkedin-icon.png" alt="linkedin-icon">
                         </div>
                     </a>
-                    <a class="button-contact" href="https://www.behance.net/alessiapellicoro" target="_blank">
+
+                    <!-- Behance -->
+                    <a class="button-contact" href="https://www.behance.net/alessiapellicoro" target="_blank" onclick="closePopup()">
                         <div>
                             <img src="./assets/behance-icon.png" alt="behance-icon">
                         </div>
@@ -245,8 +254,19 @@
             </div>
         </div>
         
+        <div id="popup" class="popup-container">
+            <div class="popup">
+                <div class="text-center">
+                    <img src="./assets/confetti.png" alt="confetti-icon">
+                    <h2 class="heading-2 mt-3">Grazie!</h2>
+                    <p class="text text-center mt-3">Il tuo messaggio è stato inviato correttamente!</p>
+                </div>
+                <button class="button mt-3" onclick="closePopup()">Chiudi</button>
+            </div>
+        </div>
+            
     </div>
-    
+
     <!-- In env.js there are only env variables for security resons -->
     <script src="./env.js"></script>
     <script src="./js/script.js"></script>

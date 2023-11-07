@@ -214,6 +214,7 @@
     width: 375px;
     height: 80px;
     margin: 0 auto;
+    box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.10), 0px -10px 10px 0px rgba(0, 0, 0, 0.09), 0px -22px 13px 0px rgba(0, 0, 0, 0.05), 0px -39px 16px 0px rgba(0, 0, 0, 0.01), 0px -61px 17px 0px rgba(0, 0, 0, 0.00);
 }
 /* end Phone Size */
 
@@ -318,6 +319,13 @@ ion-icon{
     display: flex;
     justify-content: flex-end;
 }
+.error{
+    border: 1.5px solid #FF4747 !important;
+}
+.error::placeholder{
+    color:#FF4747;
+    opacity: 50%;
+}
 /* End Content Form */
 
 /* Content Contacts */
@@ -375,6 +383,40 @@ ion-icon{
     margin-right: 32px;
 }
 /* End Content Footer */
+
+/* Pop Up */
+.popup-container{
+    background-color: rgba( 255, 255, 255, 0.7);
+    backdrop-filter: blur(2px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+}
+.popup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+    background-color: #fff;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.10), 0px 31px 31px 0px rgba(0, 0, 0, 0.09), 0px 69px 42px 0px rgba(0, 0, 0, 0.05), 0px 123px 49px 0px rgba(0, 0, 0, 0.01), 0px 193px 54px 0px rgba(0, 0, 0, 0.00);
+    width: 220px;
+    height: auto;
+    border-radius: 20px;
+    
+}
+.popup img{
+    width: 100px;
+}
+.show{
+    display: flex !important;
+}
+/* End Pop Up */
 
 
 /* Device Content Tablet */
