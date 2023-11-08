@@ -75,10 +75,10 @@ function closePopup (){
 /**
  * gsap
  */
-// const tl = new gsap.timeline()
-// tl.from(".cardboard-image", { y: 200, autoAlpha: 0, duration: 1 });
-// tl.from(".cardboard-title", { y: 200, autoAlpha: 0, duration: 1 }, '<0.25');
-// tl.from(".cardboard-about", { y: 200, autoAlpha: 0, duration: 1 }, '<0.25');
-// tl.from(".cardboard-contacts", { x: -200, autoAlpha: 0, duration: 1 }, '<0.25');
-// tl.from(".skills-study", { x: 200, autoAlpha: 0, duration: 1 }, '<0.25');
-// tl.from(".cardboard-project", { y: 200, autoAlpha: 0, duration: 1 }, '<0.25');
+// const tl = new gsap.timeline({defaults: {duration: 1}})
+// tl.from(".cardboard-image", { y: 200, autoAlpha: 0 });
+// tl.from(".cardboard-title", { y: 200, autoAlpha: 0 }, '<0.2');
+// tl.from(".cardboard-about", { y: 200, autoAlpha: 0 }, '<0.2');
+// tl.from(".cardboard-contacts", { x: -200, autoAlpha: 0 }, '<0.2');
+// tl.from(".skills-study", { x: 200, autoAlpha: 0 }, '<0.2');
+// tl.from(".cardboard-project", { y: 200, autoAlpha: 0 }, '<0.2');
