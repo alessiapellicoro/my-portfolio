@@ -237,6 +237,12 @@
 /* End Content Skills */
 
 /* Content Project */
+.content-cardboard-project{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 .content-cardboard-project-header{
     display: flex;
     margin-bottom: 32px;
@@ -407,7 +413,6 @@ ion-icon{
     width: 220px;
     height: auto;
     border-radius: 20px;
-    
 }
 .popup img{
     width: 100px;
@@ -417,9 +422,9 @@ ion-icon{
 }
 /* End Pop Up */
 
-
-/* Stiker */
+/* Sticker Mobile*/
 .sticker-ciao{
+    display: block;
     position: absolute;
     width: 129px;
     height: 127px;
@@ -431,22 +436,83 @@ ion-icon{
     width: 100%;
     height: 100%;
 }
-.sticker-presentation{
+.sticker-about-desktop{
+    display: none;
+}
+.sticker-about-mobile-tablet{
+    display: block;
     position: absolute;
     width: 200px;
-    height: 114px;
-    top: -23px;
-    left: 357px;
-    transform: translate(-50%, -50%) rotate(315deg);
+    height: 89px;
+    left: 256px;
+    top: -31px;
+    transform: translate(-50%, -50%);
 }
-.sticker-presentation img{
+.sticker-about-mobile-tablet img,
+.sticker-about-desktop img{
     width: 100%;
     height: 100%;
 }
 .sticker-contacts{
     display: none;
 }
-/* End Stiker */
+.sticker-contacts img{
+    width: 100%;
+    height: 100%;
+}
+.sticker-skills{
+    display: block;
+    position: absolute;
+    width: 135px;
+    height: 120px;
+    left: 160px;
+    top: -17px;
+    transform: translate(-50%, -50%);
+}
+.sticker-skills img{
+    width: 100%;
+    height: 100%;
+}
+.sticker-study{
+    display: block;
+    position: absolute;
+    width: 108px;
+    height: 118px;
+    left: 302px;
+    top: 44px;
+    transform: translate(-50%, -50%);
+}
+.sticker-study img{
+    width: 100%;
+    height: 100%;
+}
+.sticker-project{
+    display: block;
+    position: absolute;
+    width: 301px;
+    height: 106px;
+    left: 413px;
+    top: 19px;
+    transform: translate(-50%, -50%);
+}
+.sticker-project img{
+    width: 100%;
+    height: 100%;
+}
+.sticker-contact-me{
+    display: block;
+    position: absolute;
+    width: 180px;
+    height: 93px;
+    left: 81px;
+    bottom: -69px;
+    transform: translate(-50%, -50%);
+}
+.sticker-contact-me img{
+    width: 100%;
+    height: 100%;
+}
+/* End Stiker Mobile */
 
 /* Device Content Tablet */
 /* 
@@ -517,13 +583,16 @@ ion-icon{
 
     /* Sticker */
     .sticker-ciao{
-        top: 3px;
         left: 25px;
     }
-    .sticker-presentation{
-        top: -1px;
-        left: 313px;
-        transform: rotate(0);
+    .sticker-contacts{
+        display: none;
+    }
+    .sticker-contact-me{
+        width: 237px;
+        height: 123px;
+        left: 413px;
+        bottom: -91px;
     }
     /* End Sticker */
 }
@@ -648,25 +717,36 @@ ion-icon{
 
     /* Sticker */
     .sticker-ciao{
-        top: 3px;
         left: 40px;
     }
-    .sticker-presentation{
-        left: 463px;
-        transform: rotate(0);
+    .sticker-about-mobile-tablet{
+        display: none;
+    }
+    .sticker-about-desktop{
+        display: block;
+        position: absolute;
+        width: 214px;
+        height: 123px;
+        top: 0px;
+        left: 560px;
+        transform: translate(-50%, -50%);
     }
     .sticker-contacts{
         display: block;
         position: absolute;
         width: 138px;
         height: 88px;
-        top: 114px;
-        left: -52px;
+        top: 94px;
+        left: -56px;
         transform: translate(-50%, -50%);
     }
-    .sticker-contacts img{
-        width: 100%;
-        height: 100%;
+    .sticker-study{
+        left: 363px;
+    }
+    .sticker-contact-me{
+        width: 237px;
+        height: 123px;
+        left: 887px;
     }
     /* End Sticker */
 }

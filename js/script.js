@@ -75,10 +75,17 @@ function closePopup (){
 /**
  * gsap
  */
-// const tl = new gsap.timeline({defaults: {duration: 1}})
-// tl.from(".cardboard-image", { y: 200, autoAlpha: 0 });
-// tl.from(".cardboard-title", { y: 200, autoAlpha: 0 }, '<0.2');
-// tl.from(".cardboard-about", { y: 200, autoAlpha: 0 }, '<0.2');
-// tl.from(".cardboard-contacts", { x: -200, autoAlpha: 0 }, '<0.2');
-// tl.from(".skills-study", { x: 200, autoAlpha: 0 }, '<0.2');
-// tl.from(".cardboard-project", { y: 200, autoAlpha: 0 }, '<0.2');
+const tl = new gsap.timeline({defaults: {duration: 1}})
+tl.from(".cardboard-image", { y: 200, autoAlpha: 0 });
+tl.from(".cardboard-title", { y: 200, autoAlpha: 0 }, '<0.2');
+tl.from(".cardboard-about", { y: 200, autoAlpha: 0 }, '<0.2');
+tl.from(".cardboard-contacts", { x: -200, autoAlpha: 0 }, '<0.2');
+tl.from(".skills-study", { x: 200, autoAlpha: 0 }, '<0.2');
+tl.from(".cardboard-project", { y: 200, autoAlpha: 0 }, '<0.2');
+tl.from(".sticker-ciao", { autoAlpha: 0, duration: 0.4 }, '<1');
+tl.from(".sticker-about-mobile-tablet", { autoAlpha: 0, duration: 0.4 }, '<0.');
+tl.from(".sticker-about-desktop", { autoAlpha: 0, duration: 0.4 }, '<0.');
+tl.from(".sticker-contacts", { autoAlpha: 0, duration: 0.4 }, '<0.');
+tl.from(".sticker-skills", { autoAlpha: 0, duration: 0.4 }, '<0.');
+tl.from(".sticker-study", { autoAlpha: 0, duration: 0.4 }, '<0.');
+tl.from(".sticker-contact-me", { autoAlpha: 0, duration: 0.4 }, '<0.');
