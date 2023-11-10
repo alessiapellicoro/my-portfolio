@@ -227,12 +227,36 @@
 /* End Image container */
 
 /* Content Slills */
-.content-cardboard-skills-icon{
+.logo-skill{
     display: flex;
-    margin-top: 37px;
     height: 64px;
     width: 64px;
+}
+.content-cardboard-skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-cardboard-skills-icon{
+    display: flex;
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
     gap: 8px;
+    padding-bottom: 8px;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+.logo-skill, .content-cardboard-skills-icon{
+    scroll-snap-align: start;
+}
+.scroll-1::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+  
+.scroll-1::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #E8E8E8;
 }
 /* End Content Skills */
 
@@ -299,6 +323,7 @@ ion-icon{
     padding: 16px;
     display: flex;
     background-color: #F7F7FA;
+    border: 1px solid #F7F7FA;
     gap: 10px;
     width: 100%;
     border-radius: 20px;
@@ -319,17 +344,19 @@ ion-icon{
 .content-cardboard-form :focus{
     outline: none !important;
     border:1px solid  #3F403F;
+    /* box-shadow: 0 0 0 5px rgb(63 64 63 / 30%); */
 }
 .cta-send-message{
     display: flex;
     justify-content: flex-end;
 }
 .error{
-    border: 1.5px solid #FF4747 !important;
+    /* border-color: lightcoral; */
+    border: 1.5px solid lightcoral !important;
+    box-shadow: 0 0 0 2px rgb(240 128 128 / 30%);
 }
 .error::placeholder{
-    color:#FF4747;
-    opacity: 50%;
+    color: lightcoral;
 }
 /* End Content Form */
 
