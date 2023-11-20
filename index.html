@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alessia Pellicoro portfolio</title>
+    <title> Portfolio | Alessia Pellicoro</title>
     <link rel="stylesheet" href="./styles/style.css">
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -183,19 +183,32 @@
                     <div class="content-cardboard-project-header">
                         <h2 class="heading-2">Project</h2>
                         <div>
-                            <button class="arrow">
+                            <button class="arrow" onclick="prevAnimation()">
                                 <ion-icon name="chevron-back-circle-outline" size="large"></ion-icon>    
                             </button>
-                            <button class="arrow">
+                            <button class="arrow" onclick="nextAnimation()">
                                 <ion-icon name="chevron-forward-circle-outline" size="large"></ion-icon>
                             </button>
                         </div>
                     </div>
-                    <a class="cover-image-link" href="./projects/grafica-s2i/">
-                        <div class="cover-image">
-                            <img src="./assets/cover-medit-active.jpg" alt="logo-medit-active">
+
+                    <div class="slider-container">
+                        <div id="slider">
+                            <!-- Project 1 -->
+                            <a class="cover-image-link" href="./projects/grafica-s2i/">
+                                <div class="cover-image">
+                                    <img src="./assets/cover-medit-active.jpg" alt="cover-medit-active">
+                                </div>
+                            </a>
+        
+                            <!-- Project 2 -->
+                            <!-- <a class="cover-image-link" href="./projects/discovery-s2i/">
+                                <div class="cover-image">
+                                    <h1>Here will go 2</h1>
+                                </div>
+                            </a> -->
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
 

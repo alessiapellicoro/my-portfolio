@@ -273,10 +273,9 @@
     justify-content: space-between;
 }
 .cover-image-link{
-    display: block;
-    justify-content: center;
-    width: 100%;
-    height: 172px;
+    display: flex;
+    min-width: 100%;
+    height: 100%;
 }
 .cover-image{
     width: 100%;
@@ -301,6 +300,18 @@
 }
 ion-icon{
     color: #3F403F;
+}
+.slider-container{
+    width: 100%;
+    height: 172px;
+    flex: 1;
+    overflow: hidden;
+}
+#slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 0;
 }
 /* End Content Project */
 
@@ -604,7 +615,8 @@ ion-icon{
         display: block;
         justify-content: center;
         width: 100%;
-        height: 381px;
+        height: 100%;
+        /* height: 381px; */
     }
     /* End Content Project */
 

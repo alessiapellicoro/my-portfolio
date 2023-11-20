@@ -75,7 +75,7 @@ function closePopup (){
 /**
  * gsap
  */
-const tl = new gsap.timeline({defaults: {duration: 1}})
+var tl = new gsap.timeline({defaults: {duration: 1}})
 tl.from(".cardboard-image", { y: 200, autoAlpha: 0 });
 tl.from(".cardboard-title", { y: 200, autoAlpha: 0 }, '<0.2');
 tl.from(".cardboard-about", { y: 200, autoAlpha: 0 }, '<0.2');
@@ -89,3 +89,45 @@ tl.from(".sticker-contacts", { autoAlpha: 0, duration: 0.4 }, '<0.');
 tl.from(".sticker-skills", { autoAlpha: 0, duration: 0.4 }, '<0.');
 tl.from(".sticker-study", { autoAlpha: 0, duration: 0.4 }, '<0.');
 tl.from(".sticker-contact-me", { autoAlpha: 0, duration: 0.4 }, '<0.');
+
+/**
+ * carousel
+ * 
+ */
+// transform all slides into a new array
+var slides = Array.from(document.querySelectorAll('.cover-image-link'));
+
+var slider = document.querySelector('#slider')
+var index = 0;
+
+var tl = gsap.timeline();
+
+// Next Animation
+function nextAnimation(){  
+    if (index === slides.length - 1) {
+        // -1 because it will do gsap.to -100 also at the last slide
+        return
+    } else {
+        index++
+        var indexPercent = index * -100
+        console.log(indexPercent);
+         tl.to(slider, {
+            xPercent: indexPercent
+         })
+    }
+}
+
+// Prev Animation
+function prevAnimation(){
+   if(index === 0 || index === -0){
+    return
+   } else {
+       index--
+       var indexPercent = 0
+       var indexPercent = index * -100
+       console.log(indexPercent)
+       tl.to(slider, {
+           xPercent: indexPercent
+        })
+   }
+}
