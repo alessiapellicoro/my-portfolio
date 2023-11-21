@@ -219,6 +219,18 @@
 }
 /* end Phone Size */
 
+/* Content Title */
+.slider-text{
+    height: 44.4px;
+    overflow: hidden;
+}
+.slider-text-1{
+    display: flex;
+    flex-flow: column nowrap;
+    animation: slide-up 9s ease infinite;
+}
+/* End Content Title */
+
 /* Content Image*/
 .content-cardboard-image img{
     object-fit: cover;

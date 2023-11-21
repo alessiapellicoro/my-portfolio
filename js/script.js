@@ -75,20 +75,34 @@ function closePopup (){
 /**
  * gsap
  */
-var tl = new gsap.timeline({defaults: {duration: 1}})
-tl.from(".cardboard-image", { y: 200, autoAlpha: 0 });
-tl.from(".cardboard-title", { y: 200, autoAlpha: 0 }, '<0.2');
-tl.from(".cardboard-about", { y: 200, autoAlpha: 0 }, '<0.2');
-tl.from(".cardboard-contacts", { x: -200, autoAlpha: 0 }, '<0.2');
-tl.from(".skills-study", { x: 200, autoAlpha: 0 }, '<0.2');
-tl.from(".cardboard-project", { y: 200, autoAlpha: 0 }, '<0.2');
-tl.from(".sticker-ciao", { autoAlpha: 0, duration: 0.4 }, '<1');
-tl.from(".sticker-about-mobile-tablet", { autoAlpha: 0, duration: 0.4 }, '<0.');
-tl.from(".sticker-about-desktop", { autoAlpha: 0, duration: 0.4 }, '<0.');
-tl.from(".sticker-contacts", { autoAlpha: 0, duration: 0.4 }, '<0.');
-tl.from(".sticker-skills", { autoAlpha: 0, duration: 0.4 }, '<0.');
-tl.from(".sticker-study", { autoAlpha: 0, duration: 0.4 }, '<0.');
-tl.from(".sticker-contact-me", { autoAlpha: 0, duration: 0.4 }, '<0.');
+var tlReveal = new gsap.timeline({defaults: {duration: 1}})
+tlReveal.from(".cardboard-image", { y: 200, autoAlpha: 0 });
+tlReveal.from(".cardboard-titlReveale", { y: 200, autoAlpha: 0 }, '<0.2');
+tlReveal.from(".cardboard-about", { y: 200, autoAlpha: 0 }, '<0.2');
+tlReveal.from(".cardboard-contacts", { x: -200, autoAlpha: 0 }, '<0.2');
+tlReveal.from(".skills-study", { x: 200, autoAlpha: 0 }, '<0.2');
+tlReveal.from(".cardboard-project", { y: 200, autoAlpha: 0 }, '<0.2');
+tlReveal.from(".sticker-ciao", { autoAlpha: 0, duration: 0.4 }, '<1');
+tlReveal.from(".sticker-about-mobile-tablet", { autoAlpha: 0, duration: 0.4 }, '<0.');
+tlReveal.from(".sticker-about-desktop", { autoAlpha: 0, duration: 0.4 }, '<0.');
+tlReveal.from(".sticker-contacts", { autoAlpha: 0, duration: 0.4 }, '<0.');
+tlReveal.from(".sticker-skills", { autoAlpha: 0, duration: 0.4 }, '<0.');
+tlReveal.from(".sticker-study", { autoAlpha: 0, duration: 0.4 }, '<0.');
+tlReveal.from(".sticker-contact-me", { autoAlpha: 0, duration: 0.4 }, '<0.');
+
+/**
+ * Slider heading 1
+ */
+var sliderText = document.querySelector('.slider-text-1');
+var tlSlider = gsap.timeline({repeat: -1});
+tlSlider.to(sliderText, {
+    yPercent: -25, duration: 1, delay: 1.5, ease: 'power4.out'
+})
+tlSlider.to(sliderText, {
+    yPercent: -50, duration: 1, delay: 1.5, ease: 'power4.out'
+})
+gsap.set(sliderText, {yPercent: 0})
+
 
 /**
  * carousel
@@ -100,7 +114,7 @@ var slides = Array.from(document.querySelectorAll('.cover-image-link'));
 var slider = document.querySelector('#slider')
 var index = 0;
 
-var tl = gsap.timeline();
+var tlCarousel = gsap.timeline();
 
 // Next Animation
 function nextAnimation(){  
@@ -111,9 +125,9 @@ function nextAnimation(){
         index++
         var indexPercent = index * -100
         console.log(indexPercent);
-         tl.to(slider, {
-            xPercent: indexPercent
-         })
+        tlCarousel.to(slider, {
+        xPercent: indexPercent
+        })
     }
 }
 
@@ -122,12 +136,12 @@ function prevAnimation(){
    if(index === 0 || index === -0){
     return
    } else {
-       index--
-       var indexPercent = 0
-       var indexPercent = index * -100
-       console.log(indexPercent)
-       tl.to(slider, {
-           xPercent: indexPercent
+        index--
+        var indexPercent = 0
+        var indexPercent = index * -100
+        console.log(indexPercent)
+        tlCarousel.to(slider, {
+            xPercent: indexPercent
         })
    }
 }
