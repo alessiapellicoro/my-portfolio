@@ -221,7 +221,8 @@
 
 /* Content Title */
 .slider-text{
-    height: 44.4px;
+    /* height: 44.4px; */
+    height: 34.8px;
     overflow: hidden;
 }
 .slider-text-1{
@@ -724,6 +725,11 @@ ion-icon{
     .cardboard-contacts-mobile{
         display: none;
     }
+    /* Content Title */
+    .slider-text{
+    height: 44.4px;
+}
+    /* End Content Title */
     /* Content Project */
     .content-cardboard-project{
         width: 100%;
