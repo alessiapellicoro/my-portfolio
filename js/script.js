@@ -73,24 +73,6 @@ function closePopup (){
 }
 
 /**
- * gsap
- */
-var tlReveal = new gsap.timeline({defaults: {duration: 1}})
-tlReveal.from(".cardboard-image", { y: 200, autoAlpha: 0 });
-tlReveal.from(".cardboard-titlReveale", { y: 200, autoAlpha: 0 }, '<0.2');
-tlReveal.from(".cardboard-about", { y: 200, autoAlpha: 0 }, '<0.2');
-tlReveal.from(".cardboard-contacts", { x: -200, autoAlpha: 0 }, '<0.2');
-tlReveal.from(".skills-study", { x: 200, autoAlpha: 0 }, '<0.2');
-tlReveal.from(".cardboard-project", { y: 200, autoAlpha: 0 }, '<0.2');
-tlReveal.from(".sticker-ciao", { autoAlpha: 0, duration: 0.4 }, '<1');
-tlReveal.from(".sticker-about-mobile-tablet", { autoAlpha: 0, duration: 0.4 }, '<0.');
-tlReveal.from(".sticker-about-desktop", { autoAlpha: 0, duration: 0.4 }, '<0.');
-tlReveal.from(".sticker-contacts", { autoAlpha: 0, duration: 0.4 }, '<0.');
-tlReveal.from(".sticker-skills", { autoAlpha: 0, duration: 0.4 }, '<0.');
-tlReveal.from(".sticker-study", { autoAlpha: 0, duration: 0.4 }, '<0.');
-tlReveal.from(".sticker-contact-me", { autoAlpha: 0, duration: 0.4 }, '<0.');
-
-/**
  * Slider heading 1
  */
 var sliderText = document.querySelector('.slider-text-1');
