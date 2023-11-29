@@ -1,0 +1,809 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.centered{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 48px;
+    padding-bottom: calc(80px + 24px);
+    gap: 30px;
+    background-color: #F7F7FA;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;;
+    gap: 30px;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Typography */
+.heading-1{
+    font-family: 'Inter', sans-serif;
+    font-size: 29px;
+    color: #3F403F;
+    font-weight: 700;
+    /* line-height: 22.5px; */
+    margin: 0;
+    padding: 0
+}
+.heading-2{
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    color: #3F403F;
+    font-weight: 600;
+    line-height: 120%;
+    margin: 0;
+    padding: 0
+}
+.heading-3{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #3F403F;
+    font-weight: 600;
+    line-height: 22.5px;
+    margin: 0;
+    padding: 0
+}
+.text{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #3F403F;
+    font-style: normal;
+    /* font-weight: 300; */
+    line-height: 22.5px;
+    text-align: justify;
+    margin: 0;
+    padding: 0
+}
+.lable{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #3F403F;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22.5px;
+    margin: 0;
+    padding: 0
+}
+.link{
+    color: #3F403F;
+}
+.link:hover{
+    color: #c4c4c4;
+}
+/* End Typography */
+
+/* Button */
+.button{
+    appearance: none;
+    background-color: transparent;
+    border: 1.5px solid #3F403F;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: #3F403F;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 24px;
+    text-align: center;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+   }
+   .button:disabled {
+    pointer-events: none;
+   }
+   .button:hover {
+    color: #fff;
+    background-color: #3F403F;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; */
+    transform: translateY(-2px);
+   }
+   .button:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+   .button-contact{
+    width: 35px;
+    height: 38px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+   }
+   .button-contact div{
+    width: 100%;
+    height: 100%;
+   }
+/* End Butoon */
+
+/* Cardboards Styles */
+.cardboard{
+    position: relative;
+    /* border: 1px solid black; */
+    background-color: #fff;
+    border-radius: 20px;
+}
+/* End cradbord Style */
+
+/* Phone Size */
+/* 
+    If "?" it is just in case 
+    i have to change it in future
+*/
+.cardboard-image{
+    min-width: 341px;
+    max-width: 341px;
+    height: 394px;
+    margin: 0 auto;
+}
+.title-about{
+    min-width: 341px;
+    max-width: 341px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.cardboard-title{
+    width: 100%;
+    height: 102px;
+}
+.cardboard-about{
+    width: 100%;
+    height: 251px;
+    padding: 24px;
+}
+.skills-study{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.cardboard-skills{
+    min-width: 341px;
+    max-width: 341px;
+    height: 172px;
+    padding: 24px;
+}
+.cardboard-study{
+    min-width: 341px;
+    max-width: 341px;
+    height: 347px;
+    padding: 24px;
+}
+.cardboard-project{
+    min-width: 341px;
+    max-width: 341px;
+    height: 100%;
+    padding: 24px;
+}
+.cardboard-form{
+    width: 341px;
+    height: 100%;
+    /* ? height: 683px; */
+}
+.cardboard-footer{
+    width: 341px;
+    height: 66px;
+}
+.cardboard-contacts{
+    display: none;
+}
+.cardboard-contacts-mobile{
+    width: 375px;
+    height: 80px;
+    margin: 0 auto;
+    box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.10), 0px -10px 10px 0px rgba(0, 0, 0, 0.09), 0px -22px 13px 0px rgba(0, 0, 0, 0.05), 0px -39px 16px 0px rgba(0, 0, 0, 0.01), 0px -61px 17px 0px rgba(0, 0, 0, 0.00);
+}
+/* end Phone Size */
+
+/* Content Title */
+.slider-text{
+    /* height: 44.4px; */
+    height: 34.8px;
+    overflow: hidden;
+}
+.slider-text-1{
+    display: flex;
+    flex-flow: column nowrap;
+    animation: slide-up 9s ease infinite;
+}
+/* End Content Title */
+
+/* Content Image*/
+.content-cardboard-image img{
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* End Image container */
+
+/* Content Slills */
+.logo-skill{
+    display: flex;
+    height: 64px;
+    width: 64px;
+}
+.content-cardboard-skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-cardboard-skills-icon{
+    display: flex;
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    gap: 8px;
+    padding-bottom: 8px;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+.logo-skill, .content-cardboard-skills-icon{
+    scroll-snap-align: start;
+}
+.scroll-1::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+  
+.scroll-1::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #E8E8E8;
+}
+/* End Content Skills */
+
+/* Content Project */
+.content-cardboard-project{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.content-cardboard-project-header{
+    display: flex;
+    margin-bottom: 32px;
+    justify-content: space-between;
+}
+.cover-image-link{
+    display: flex;
+    min-width: 100%;
+    height: 100%;
+}
+.cover-image{
+    width: 100%;
+    height: 100%;
+}
+.cover-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 20px;
+}
+.arrow{
+    color: #3F403F;
+    background: none;
+    border: none;
+    margin-left: 8px;
+}
+.arrow:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+ion-icon{
+    color: #3F403F;
+}
+.slider-container{
+    width: 100%;
+    height: 172px;
+    flex: 1;
+    overflow: hidden;
+}
+#slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 0;
+}
+/* End Content Project */
+
+/* Content Form */
+.content-cardboard-form{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 24px;
+}
+.content-cardboard-form-typing{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 32px; */
+    height: 100%;
+}
+.typing-1 input, 
+.typing-2 textarea{
+    border: none;
+    padding: 16px;
+    display: flex;
+    background-color: #F7F7FA;
+    border: 1px solid #F7F7FA;
+    gap: 10px;
+    width: 100%;
+    border-radius: 20px;
+}
+.typing-1 input{
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+.textarea{
+    height: 208px;
+}
+.typing-2 textarea{
+    height: 100%;
+    margin-top: 16px;
+    resize: none;
+}
+
+.content-cardboard-form :focus{
+    outline: none !important;
+    border:1px solid  #3F403F;
+    /* box-shadow: 0 0 0 5px rgb(63 64 63 / 30%); */
+}
+.cta-send-message{
+    display: flex;
+    justify-content: flex-end;
+}
+.error{
+    /* border-color: lightcoral; */
+    border: 1.5px solid lightcoral !important;
+    box-shadow: 0 0 0 2px rgb(240 128 128 / 30%);
+}
+.error::placeholder{
+    color: lightcoral;
+}
+/* End Content Form */
+
+/* Content Contacts */
+.content-cardboard-contacts-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    height: 100%;
+}
+.content-cardboard-contacts img,
+.content-cardboard-contacts-mobile img{
+    /* width: 35px; */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: 16px;
+    margin-left: 16px; */
+}
+.line{
+    border: 0.5px solid #3F403F;
+    width: 50%;
+    margin: 0;
+}
+.line-vertical{
+    height: 50%;
+    width: 1px;
+    background-color: #3F403F;
+}
+/* End Content Contacts */
+
+/* Content Footer */
+.content-cardboard-footer{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.text-footer-left,
+.text-footer-right{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.text-footer-left{
+    justify-content: start;
+    margin-left: 32px;
+}
+.text-footer-right{
+    justify-content: end;
+    gap: 16px;
+    margin-right: 32px;
+}
+/* End Content Footer */
+
+/* Pop Up */
+.popup-container{
+    background-color: rgba( 255, 255, 255, 0.7);
+    backdrop-filter: blur(2px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+}
+.popup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+    background-color: #fff;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.10), 0px 31px 31px 0px rgba(0, 0, 0, 0.09), 0px 69px 42px 0px rgba(0, 0, 0, 0.05), 0px 123px 49px 0px rgba(0, 0, 0, 0.01), 0px 193px 54px 0px rgba(0, 0, 0, 0.00);
+    width: 220px;
+    height: auto;
+    border-radius: 20px;
+}
+.popup img{
+    width: 100px;
+}
+.show{
+    display: flex !important;
+}
+/* End Pop Up */
+
+/* Sticker Mobile*/
+.sticker-ciao{
+    display: block;
+    position: absolute;
+    width: 129px;
+    height: 127px;
+    top: 3px;
+    left: 22px;
+    transform: translate(-50%, -50%);
+}
+.sticker-ciao img{
+    width: 100%;
+    height: 100%;
+}
+.sticker-about-desktop{
+    display: none;
+}
+.sticker-about-mobile-tablet{
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 89px;
+    left: 256px;
+    top: -31px;
+    transform: translate(-50%, -50%);
+}
+.sticker-about-mobile-tablet img,
+.sticker-about-desktop img{
+    width: 100%;
+    height: 100%;
+}
+.sticker-contacts{
+    display: none;
+}
+.sticker-contacts img{
+    width: 100%;
+    height: 100%;
+}
+.sticker-skills{
+    display: block;
+    position: absolute;
+    width: 135px;
+    height: 120px;
+    left: 160px;
+    top: -17px;
+    transform: translate(-50%, -50%);
+}
+.sticker-skills img{
+    width: 100%;
+    height: 100%;
+}
+.sticker-study{
+    display: block;
+    position: absolute;
+    width: 108px;
+    height: 118px;
+    left: 302px;
+    top: 44px;
+    transform: translate(-50%, -50%);
+}
+.sticker-study img{
+    width: 100%;
+    height: 100%;
+}
+.sticker-project{
+    display: block;
+    position: absolute;
+    width: 301px;
+    height: 106px;
+    left: 413px;
+    top: 19px;
+    transform: translate(-50%, -50%);
+}
+.sticker-project img{
+    width: 100%;
+    height: 100%;
+}
+.sticker-contact-me{
+    display: block;
+    position: absolute;
+    width: 180px;
+    height: 93px;
+    left: 81px;
+    bottom: -69px;
+    transform: translate(-50%, -50%);
+}
+.sticker-contact-me img{
+    width: 100%;
+    height: 100%;
+}
+/* End Stiker Mobile */
+
+/* Device Content Tablet */
+/* 
+    If "?" it is just in case 
+    i have to change it in future
+*/
+@media (min-width: 720px) { 
+    .hero{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+   .cardboard-image{
+        /* ? min-width: 341px; */
+        /* ?max-width: 341px; */
+        height: 383px;
+        margin: 0;
+    }
+    .title-about{
+        /* ? max-width: 341px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .cardboard-title{
+        width: 100%;
+        /* ? height: 102px; */
+    }
+    .cardboard-about{
+        width: 100%;
+        /* ? height: 251px; */
+    }
+    .skills-study{
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 30px;
+    }
+    .cardboard-skills{
+        width: 100%;
+        /* ? height: 172px; */
+    }
+    .cardboard-study{
+        width: 100%;
+        /* ? height: 347px; */
+    }
+    .cardboard-project{
+        min-width: 712px;
+        height: 496px;
+    }
+    .cardboard-form{
+        width: 712px;
+        height: 100%;
+        /* ? height: 682px; */
+    }
+    .cardboard-footer{
+        width: 712px;
+        /* ? height: 66px; */
+    }
+    /* Content Project */
+    .cover-image-link{
+        display: block;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        /* height: 381px; */
+    }
+    /* End Content Project */
+
+    /* Sticker */
+    .sticker-ciao{
+        left: 25px;
+    }
+    .sticker-contacts{
+        display: none;
+    }
+    .sticker-contact-me{
+        width: 237px;
+        height: 123px;
+        left: 413px;
+        bottom: -91px;
+    }
+    /* End Sticker */
+}
+
+/* Device Content Desktop */
+@media (min-width: 1200px) { 
+
+    /* Typography */
+    .heading-1{
+        font-size: 37px;
+    }
+    .heading-2{
+        font-size: 23px;
+    }
+    .heading-3{
+        font-size: 19px;
+    }
+    .text{
+        font-size: 15px;
+    }
+    /* End Typography */
+
+   .cardboard-image{
+        min-width: 277px;
+        max-width: 277px;
+        height: 352px;
+        margin: 0;
+    }
+    .title-about{
+        min-width: 482px;
+        max-width: 482px;
+    }
+    .cardboard-title{
+        width: 100%;
+        height: 115px;
+    }
+    .cardboard-about{
+        width: 100%;
+        height: 206px;
+    }
+    .main{
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .skills-study{
+        min-width: 381px;
+        width: 381px;
+        flex-direction: column;
+    }
+    .cardboard-skills{
+        min-width: 100%;
+        height: 172px;
+    }
+    .cardboard-study{
+        max-width: 100%;
+        max-width: 100%;
+        height: 375px;
+    }
+    .cardboard-project{
+        min-width: 785px;
+        height: 577px;
+        /* height: 100%; */
+    }
+    .cardboard-form{
+        width: 1196px;
+        height: 100%;
+        /* ? height: 417px; */
+    }
+    .cardboard-footer{
+        width: 1196px;
+        height: 66px;
+    }
+    .cardboard-contacts{
+        display: block;
+        min-width: 69px;
+        margin-left: 308px;
+    }
+    .cardboard-contacts-mobile{
+        display: none;
+    }
+    /* Content Title */
+    .slider-text{
+    height: 44.4px;
+}
+    /* End Content Title */
+    /* Content Project */
+    .content-cardboard-project{
+        width: 100%;
+        /* height: 100%; */
+    }
+    .cover-image-link{
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    /* End Content Project */
+
+    /* Content Form */
+    .content-cardboard-form-typing{
+        flex-direction: row;
+    }
+    .typing-1,
+    .typing-2{
+        width: 100%;
+    }
+    .typing-1{
+        margin-right: 32px;
+    }
+    .typing-1 input:last-of-type{
+        margin-bottom: 0 !important;
+    }
+    .textarea{
+        height: calc(100% - (22.5px + 16px)); /* 22.5 -> h3 | 16 -> marginTop */
+    }
+    /* End Content Form */
+
+    /* Content Contatcts */
+    .content-cardboard-contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    height: 100%;
+    }
+    /* End Content Contacts */
+
+    /* Sticker */
+    .sticker-ciao{
+        left: 40px;
+    }
+    .sticker-about-mobile-tablet{
+        display: none;
+    }
+    .sticker-about-desktop{
+        display: block;
+        position: absolute;
+        width: 214px;
+        height: 123px;
+        top: 0px;
+        left: 560px;
+        transform: translate(-50%, -50%);
+    }
+    .sticker-contacts{
+        display: block;
+        position: absolute;
+        width: 138px;
+        height: 88px;
+        top: 94px;
+        left: -56px;
+        transform: translate(-50%, -50%);
+    }
+    .sticker-study{
+        left: 363px;
+    }
+    .sticker-contact-me{
+        width: 237px;
+        height: 123px;
+        left: 887px;
+    }
+    /* End Sticker */
+}
