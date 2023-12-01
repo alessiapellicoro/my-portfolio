@@ -14,9 +14,45 @@
     border-radius: 20px;
     border: 1.5px solid #3F403F;
 }
-p{
-    margin-bottom: 0px;
+
+/* Text */
+.heading-1{
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #3F403F;
 }
+.heading-3{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #3F403F;
+}
+.link-text{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3F403F;
+}
+.heading-section{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #3F403F;
+}
+.heading-skills{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3F403F;
+}
+.text{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3F403F;
+}
+/* End Text */
 
 /* Hero */
 .hero{
@@ -51,6 +87,7 @@ p{
     align-items: center;
 }
 .link-contact{
+    color: #3F403F;
     display: flex;
     flex-direction: row;
     gap: 16px;
