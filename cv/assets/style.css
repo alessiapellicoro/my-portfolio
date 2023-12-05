@@ -168,3 +168,37 @@
     justify-content: space-between;
 }
 /* End Main */
+
+
+/* Responsive */
+@media (max-width: 900px) {
+    .app-container{
+        padding: 26px;
+    }
+    /* Hero */
+    .hero{
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .my-photo{
+        margin: 16px auto;
+    }
+    .header-text{
+        text-align: center;
+        margin: 0 auto;
+    }
+    /* End Hero */
+
+    /* Main */
+    .main{
+        flex-direction: column-reverse;
+    }
+    .profile, .education{
+        margin-bottom: 64px;
+    }
+    .education-content{
+        flex-direction: column;
+    }
+    /* End Main */
+
+}
